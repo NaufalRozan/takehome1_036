@@ -5,12 +5,24 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>Home</title>
+        <title>Receipt</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Welcome</div>
+        <div>Receipt</div>
+        <hr>
+        <tr>
+            <th>Nama Sayuran        : </th><td th:text="${nama}"></td></br>
+            <th>Harga               :Rp.  </th><td th:text="${harga}"></td></br>
+            <th>Jumlah Beli         : </th><td th:text="${jlh}"></td></br>
+            <th>Total Harga         :Rp.  </th><td th:text="${total}"></td></br><br>
+            <th>Selamat anda mendapat potongan sebesar </th><td th:text="${Diskon}"></td></br> 
+            atau sebesar Rp. </th><td th:text="${tDiskon}"></td></br><br>
+            <th>Total Harga Diskon  :Rp.  </th><td th:text="${totald}"></td></br>
+            </th><td th:text="${Warning}"></td></br>
+            
+        </tr>
     </body>
 </html>
 
